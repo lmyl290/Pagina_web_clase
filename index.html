@@ -1,407 +1,1 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Persia Felina | Todo sobre el gato persa</title>
-  <meta name="description" content="Guía moderna del gato persa: carácter, historia, colores, cuidados del pelaje, preguntas frecuentes y un test para saber si es la raza ideal para ti.">
-  <meta name="theme-color" content="#232c6b">
-  <meta property="og:title" content="Persia Felina | Todo sobre el gato persa">
-  <meta property="og:description" content="Carácter, historia, colores y cuidados del gato persa.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css">
-  <script src="js/main.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-  <!-- ENCABEZADO -->
-  <header class="site-header" id="inicio-header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Persia Felina, ir al inicio">
-        <svg class="brand-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M5 6l6 4h10l6-4v13a11 11 0 0 1-22 0z" fill="currentColor"/></svg>
-        <span class="brand-name">Persia Felina</span>
-      </a>
-
-      <nav class="main-nav" id="menu" aria-label="Principal">
-        <ul>
-          <li><a href="#por-que">Por qué un persa</a></li>
-          <li><a href="#historia">Historia</a></li>
-          <li><a href="#colores">Colores</a></li>
-          <li><a href="#cuidados">Cuidados</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#test">Test</a></li>
-          <li><a href="#faq">Preguntas</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" id="tema" aria-label="Cambiar a modo oscuro" aria-pressed="false">
-          <span class="theme-icon" aria-hidden="true"></span>
-        </button>
-        <a class="btn btn-small" href="#contacto">Escríbenos</a>
-        <button class="menu-toggle" type="button" id="menu-boton" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <div class="scroll-progress" id="progreso" aria-hidden="true"></div>
-  </header>
-
-  <main id="contenido">
-
-    <!-- HERO -->
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="hero-kicker">Una de las razas más antiguas del mundo</p>
-          <h1>Persa: pelaje de seda, calma de hogar</h1>
-          <p class="hero-lead">Todo lo que necesitas para conocer, elegir y cuidar a un gato persa: su carácter, su historia, sus colores y la rutina que mantiene su pelaje impecable.</p>
-          <div class="hero-cta">
-            <a class="btn" href="#test">Haz el test: ¿es para mí?</a>
-            <a class="btn btn-ghost" href="#cuidados">Ver cuidados</a>
-          </div>
-          <dl class="hero-facts">
-            <div><dt>Peso</dt><dd>3,2 – 5,4 kg</dd></div>
-            <div><dt>Cepillado</dt><dd>Todos los días</dd></div>
-            <div><dt>Ambiente</dt><dd>Tranquilo, de interior</dd></div>
-          </dl>
-        </div>
-        <figure class="hero-media">
-          <img src="assets/img/persa-hero.svg" alt="Ilustración de un gato persa blanco de ojos color miel" width="900" height="1000" fetchpriority="high">
-          <figcaption>Cara redondeada, ojos grandes y pelaje abundante.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- POR QUÉ ELEGIR UN PERSA -->
-    <section class="section" id="por-que">
-      <div class="container">
-        <header class="section-head">
-          <h2>¿Por qué elegir un gato persa?</h2>
-          <p>Tres razones por las que tantas familias se quedan con esta raza.</p>
-        </header>
-        <div class="reasons">
-          <article class="reason">
-            <h3>Compañero cariñoso</h3>
-            <p>Dulce y de carácter tranquilo, al persa le gusta estar cerca de sus personas y compartir momentos de calma. Su voz es suave y melodiosa, nada de maullidos estridentes.</p>
-          </article>
-          <article class="reason">
-            <h3>Belleza y elegancia</h3>
-            <p>Su pelaje largo y su rostro redondeado llaman la atención en cualquier habitación. Es un gato más decorativo que trepador: busca el sol y se acomoda entre los muebles.</p>
-          </article>
-          <article class="reason">
-            <h3>Actividad baja</h3>
-            <p>Juega, pero no necesita tanto ejercicio como otras razas. Se adapta bien a apartamentos y a estilos de vida relajados.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FICHA Y NECESIDADES -->
-    <section class="section section-alt" id="ficha">
-      <div class="container two-col">
-        <div>
-          <h2>Ficha de la raza</h2>
-          <dl class="spec-list">
-            <div><dt>Origen</dt><dd>Persia, actual Irán</dd></div>
-            <div><dt>Peso</dt><dd>3,2 – 5,4 kg</dd></div>
-            <div><dt>Complexión</dt><dd>Media</dd></div>
-            <div><dt>Pelaje</dt><dd>Largo y sedoso</dd></div>
-            <div><dt>Carácter</dt><dd>Tranquilo, dulce, independiente pero amigable</dd></div>
-            <div><dt>Colores</dt><dd>Negro, azul, crema, camafeo, carey ahumado y azul crema ahumado</dd></div>
-          </dl>
-        </div>
-        <div>
-          <h2>Lo que necesitas saber</h2>
-          <ul class="check-list">
-            <li class="is-good">Gato tranquilo y sosegado.</li>
-            <li class="is-good">Ideal para vivir en interior.</li>
-            <li class="is-good">Se lleva bien con la soledad durante el día.</li>
-            <li class="is-warn">Requiere aseo todos los días.</li>
-            <li class="is-warn">Necesita un ambiente tranquilo.</li>
-            <li class="is-warn">No es ideal para casas con mucho ruido o niños muy pequeños.</li>
-            <li class="is-warn">Se beneficia de un propietario con experiencia.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PERSONALIDAD -->
-    <section class="section" id="personalidad">
-      <div class="container narrow">
-        <h2>Personalidad</h2>
-        <p>Dulce y gentil, el persa aprecia un hogar sereno donde sentirse seguro. Sus ojos grandes lo hacen muy expresivo: con una inclinación de cabeza transmite curiosidad y con un ronroneo profundo muestra su felicidad.</p>
-        <p>No es amigo de trepar ni de saltar. Prefiere los lugares soleados, los cojines y los rincones cómodos, y se lleva bien con toda la familia, sobre todo si convive con ella desde cachorro.</p>
-      </div>
-    </section>
-
-    <!-- HISTORIA -->
-    <section class="section section-alt" id="historia">
-      <div class="container">
-        <header class="section-head">
-          <h2>Historia y origen</h2>
-          <p>De Persia a los hogares de todo el mundo.</p>
-        </header>
-        <ol class="timeline">
-          <li>
-            <h3>Persia, siglo XVII</h3>
-            <p>Se cree que los primeros gatos de pelo largo salieron de Persia hacia Europa, lo que convierte al persa en una de las razas más antiguas.</p>
-          </li>
-          <li>
-            <h3>Un tipo más moderado</h3>
-            <p>Aquellos gatos tenían el hocico más largo y el pelo menos extremo que el persa de cara plana que conocemos hoy.</p>
-          </li>
-          <li>
-            <h3>Décadas de selección</h3>
-            <p>Distintos grupos de criadores fueron modificando el tipo de pelaje, la longitud del hocico y el color.</p>
-          </li>
-          <li>
-            <h3>Hoy</h3>
-            <p>Existen varios tipos de persa, y cada uno tiene su propio carácter físico. Los conoces en la siguiente sección.</p>
-          </li>
-        </ol>
-
-        <h3 class="subhead">Tipos de persa</h3>
-        <ul class="type-grid">
-          <li><strong>Pelo largo</strong><span>El clásico, de manto abundante.</span></li>
-          <li><strong>Chinchilla</strong><span>Pelaje claro con puntas más oscuras.</span></li>
-          <li><strong>Cara de muñeca</strong><span>Rostro de rasgos más suaves.</span></li>
-          <li><strong>Exótico de pelo corto</strong><span>Mismo carácter, menos cepillado.</span></li>
-          <li><strong>Himalayo</strong><span>Patrón de puntas oscuras y ojos azules.</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- COLORES -->
-    <section class="section" id="colores">
-      <div class="container">
-        <header class="section-head">
-          <h2>Colores del persa</h2>
-          <p>Selecciona un color para ver su descripción.</p>
-        </header>
-        <div class="color-picker" role="tablist" aria-label="Colores del gato persa">
-          <button class="swatch" role="tab" aria-selected="true" data-color="negro" data-hex="#1d1b22"><span class="dot"></span>Negro</button>
-          <button class="swatch" role="tab" aria-selected="false" data-color="azul" data-hex="#8b97ad"><span class="dot"></span>Azul</button>
-          <button class="swatch" role="tab" aria-selected="false" data-color="crema" data-hex="#ecd3a8"><span class="dot"></span>Crema</button>
-          <button class="swatch" role="tab" aria-selected="false" data-color="camafeo" data-hex="#e8a995"><span class="dot"></span>Camafeo</button>
-          <button class="swatch" role="tab" aria-selected="false" data-color="carey" data-hex="#6b5646"><span class="dot"></span>Carey ahumado</button>
-          <button class="swatch" role="tab" aria-selected="false" data-color="azulcrema" data-hex="#b9b0a6"><span class="dot"></span>Azul crema ahumado</button>
-        </div>
-        <div class="color-panel" id="color-panel" role="tabpanel" aria-live="polite">
-          <h3 id="color-titulo">Negro</h3>
-          <p id="color-texto">Un manto oscuro y profundo que resalta los ojos grandes del persa.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CUIDADOS -->
-    <section class="section section-alt" id="cuidados">
-      <div class="container">
-        <header class="section-head">
-          <h2>Cuidados del persa</h2>
-          <p>Su belleza pide constancia. Estas son las rutinas clave.</p>
-        </header>
-        <div class="care" data-tabs>
-          <div class="care-tabs" role="tablist" aria-label="Tipos de cuidado">
-            <button role="tab" id="tab-pelaje" aria-controls="panel-pelaje" aria-selected="true">Pelaje</button>
-            <button role="tab" id="tab-ojos" aria-controls="panel-ojos" aria-selected="false" tabindex="-1">Ojos y cara</button>
-            <button role="tab" id="tab-bano" aria-controls="panel-bano" aria-selected="false" tabindex="-1">Baño</button>
-            <button role="tab" id="tab-salud" aria-controls="panel-salud" aria-selected="false" tabindex="-1">Salud</button>
-            <button role="tab" id="tab-casa" aria-controls="panel-casa" aria-selected="false" tabindex="-1">Hogar</button>
-          </div>
-          <div class="care-panel" id="panel-pelaje" role="tabpanel" aria-labelledby="tab-pelaje">
-            <h3>Cepillado diario</h3>
-            <p>Su pelo largo se enreda con facilidad. Cepíllalo todos los días con un peine de dientes anchos y luego uno fino para evitar nudos.</p>
-          </div>
-          <div class="care-panel" id="panel-ojos" role="tabpanel" aria-labelledby="tab-ojos" hidden>
-            <h3>Limpieza frecuente</h3>
-            <p>Por la forma de su cara, los ojos pueden lagrimear. Límpialos con una gasa humedecida a diario y mantén seca la zona de los pliegues.</p>
-          </div>
-          <div class="care-panel" id="panel-bano" role="tabpanel" aria-labelledby="tab-bano" hidden>
-            <h3>Baño periódico</h3>
-            <p>Un baño con champú para gatos cada cierto tiempo ayuda a mantener el pelaje limpio y suave. Sécalo bien y cepíllalo antes y después.</p>
-          </div>
-          <div class="care-panel" id="panel-salud" role="tabpanel" aria-labelledby="tab-salud" hidden>
-            <h3>Revisiones veterinarias</h3>
-            <p>Programa visitas periódicas al veterinario, mantén las vacunas al día y consulta cualquier cambio en la respiración, los ojos o el apetito.</p>
-          </div>
-          <div class="care-panel" id="panel-casa" role="tabpanel" aria-labelledby="tab-casa" hidden>
-            <h3>Un hogar sereno</h3>
-            <p>Dale un rincón soleado, una cama blanda y rutinas estables. Vive mejor en interior y lejos de ruidos fuertes.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALERÍA -->
-    <section class="section" id="galeria">
-      <div class="container">
-        <header class="section-head">
-          <h2>Galería</h2>
-          <p>Toca una foto para verla en grande.</p>
-        </header>
-        <ul class="gallery" id="galeria-lista">
-          <li><button type="button" class="gallery-item" data-full="assets/img/galeria-1.svg" data-alt="Ilustración de gato persa himalayo de ojos azules"><img src="assets/img/galeria-1.svg" alt="Ilustración de gato persa himalayo de ojos azules" width="600" height="600" loading="lazy"></button></li>
-          <li><button type="button" class="gallery-item" data-full="assets/img/galeria-2.svg" data-alt="Ilustración de gato persa azul"><img src="assets/img/galeria-2.svg" alt="Ilustración de gato persa azul" width="600" height="600" loading="lazy"></button></li>
-          <li><button type="button" class="gallery-item" data-full="assets/img/galeria-3.svg" data-alt="Ilustración de gato persa color crema"><img src="assets/img/galeria-3.svg" alt="Ilustración de gato persa color crema" width="600" height="600" loading="lazy"></button></li>
-          <li><button type="button" class="gallery-item" data-full="assets/img/galeria-4.svg" data-alt="Ilustración de gato persa blanco"><img src="assets/img/galeria-4.svg" alt="Ilustración de gato persa blanco" width="600" height="600" loading="lazy"></button></li>
-          <li><button type="button" class="gallery-item" data-full="assets/img/galeria-5.svg" data-alt="Ilustración de gato persa camafeo"><img src="assets/img/galeria-5.svg" alt="Ilustración de gato persa camafeo" width="600" height="600" loading="lazy"></button></li>
-          <li><button type="button" class="gallery-item" data-full="assets/img/galeria-6.svg" data-alt="Ilustración de gato persa negro"><img src="assets/img/galeria-6.svg" alt="Ilustración de gato persa negro" width="600" height="600" loading="lazy"></button></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- COMPARATIVA -->
-    <section class="section section-alt" id="comparativa">
-      <div class="container">
-        <header class="section-head">
-          <h2>Persa o ragdoll</h2>
-          <p>Dos gatos de pelo largo y carácter dócil, con necesidades distintas.</p>
-        </header>
-        <div class="table-wrap">
-          <table class="compare">
-            <caption class="sr-only">Comparación entre gato persa y ragdoll</caption>
-            <thead>
-              <tr><th scope="col">Rasgo</th><th scope="col">Persa</th><th scope="col">Ragdoll</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">Tamaño</th><td>Medio</td><td>Grande</td></tr>
-              <tr><th scope="row">Pelaje</th><td>Largo, exige cepillado diario</td><td>Sedoso y semilargo</td></tr>
-              <tr><th scope="row">Carácter</th><td>Tranquilo y reservado</td><td>Dócil y muy sociable</td></tr>
-              <tr><th scope="row">Ambiente ideal</th><td>Hogar silencioso</td><td>Hogar con compañía</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEST -->
-    <section class="section" id="test">
-      <div class="container narrow">
-        <header class="section-head">
-          <h2>¿Es el persa para ti?</h2>
-          <p>Responde cuatro preguntas y obtén una orientación rápida.</p>
-        </header>
-        <form class="quiz" id="quiz" novalidate>
-          <fieldset>
-            <legend>1. ¿Cuánto tiempo puedes dedicar cada día al cepillado?</legend>
-            <label><input type="radio" name="p1" value="3" required> 10 minutos o más</label>
-            <label><input type="radio" name="p1" value="2"> Unos 5 minutos</label>
-            <label><input type="radio" name="p1" value="0"> Casi nada</label>
-          </fieldset>
-          <fieldset>
-            <legend>2. ¿Cómo es el ambiente de tu casa?</legend>
-            <label><input type="radio" name="p2" value="3" required> Tranquilo</label>
-            <label><input type="radio" name="p2" value="2"> Normal</label>
-            <label><input type="radio" name="p2" value="0"> Con mucho ruido y movimiento</label>
-          </fieldset>
-          <fieldset>
-            <legend>3. ¿Qué tipo de compañía buscas?</legend>
-            <label><input type="radio" name="p3" value="3" required> Un gato calmado que disfrute del sofá</label>
-            <label><input type="radio" name="p3" value="1"> Un gato juguetón y activo</label>
-          </fieldset>
-          <fieldset>
-            <legend>4. ¿Tienes presupuesto para peluquería y veterinario?</legend>
-            <label><input type="radio" name="p4" value="3" required> Sí, sin problema</label>
-            <label><input type="radio" name="p4" value="1"> Lo justo</label>
-          </fieldset>
-          <button class="btn" type="submit">Ver resultado</button>
-          <p class="quiz-result" id="quiz-resultado" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-alt" id="faq">
-      <div class="container narrow">
-        <header class="section-head">
-          <h2>Preguntas frecuentes</h2>
-        </header>
-        <div class="faq" id="faq-lista">
-          <details>
-            <summary>¿Por qué el gato persa es tan popular?</summary>
-            <p>Por su aspecto elegante, su pelaje largo y su temperamento tranquilo, que lo han hecho una de las razas más queridas del mundo.</p>
-          </details>
-          <details>
-            <summary>¿Qué cuidados especiales necesita?</summary>
-            <p>Cepillado diario para evitar nudos, limpieza frecuente de los ojos y revisiones veterinarias periódicas.</p>
-          </details>
-          <details>
-            <summary>¿Es adecuado para apartamentos?</summary>
-            <p>Sí. Se adapta muy bien a espacios pequeños siempre que tenga un ambiente tranquilo y rutinas de cuidado constantes.</p>
-          </details>
-          <details>
-            <summary>¿Se lleva bien con otras mascotas?</summary>
-            <p>Suele convivir bien con otros animales si se los presentas con calma, mejor desde cachorro.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO / BOLETÍN -->
-    <section class="section" id="contacto">
-      <div class="container two-col">
-        <div>
-          <h2>Recibe consejos sobre tu persa</h2>
-          <p>Un correo ocasional con guías de cuidado y novedades del sitio. Sin spam.</p>
-        </div>
-        <form class="contact-form" id="form-contacto" novalidate>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-          <p class="field-error" id="error-nombre" hidden>Escribe tu nombre.</p>
-
-          <label for="correo">Correo electrónico</label>
-          <input type="email" id="correo" name="correo" autocomplete="email" required>
-          <p class="field-error" id="error-correo" hidden>Escribe un correo válido, por ejemplo nombre@correo.com.</p>
-
-          <label for="mensaje">Mensaje (opcional)</label>
-          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-
-          <button class="btn" type="submit">Suscribirme</button>
-          <p class="form-status" id="form-estado" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- PIE DE PÁGINA -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand" href="#inicio"><span class="brand-name">Persia Felina</span></a>
-        <p>Guía independiente sobre el gato persa.</p>
-      </div>
-      <nav aria-label="Pie de página">
-        <h2 class="footer-title">Explora</h2>
-        <ul>
-          <li><a href="#por-que">Por qué un persa</a></li>
-          <li><a href="#cuidados">Cuidados</a></li>
-          <li><a href="#faq">Preguntas</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Redes sociales">
-        <h2 class="footer-title">Síguenos</h2>
-        <ul>
-          <li><a href="https://www.instagram.com/" rel="noopener" target="_blank">Instagram</a></li>
-          <li><a href="https://www.facebook.com/" rel="noopener" target="_blank">Facebook</a></li>
-          <li><a href="https://wa.me/" rel="noopener" target="_blank">WhatsApp</a></li>
-        </ul>
-      </nav>
-    </div>
-    <p class="copyright">© <span id="anio">2026</span> Persia Felina. Todos los derechos reservados.</p>
-  </footer>
-
-  <!-- ELEMENTOS INTERACTIVOS -->
-  <dialog class="lightbox" id="lightbox" aria-label="Imagen ampliada">
-    <button type="button" class="lightbox-close" id="lightbox-cerrar" aria-label="Cerrar imagen">×</button>
-    <img id="lightbox-img" src="" alt="">
-  </dialog>
-  <button class="to-top" type="button" id="subir" aria-label="Volver arriba" hidden>↑</button>
-  <div class="toast" id="aviso" role="status" aria-live="polite" hidden></div>
-</body>
-</html>
+<!DOCTYPE html><html lang="es"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Descubre todo sobre la raza de gato Persa: características, origen, temperamento, cuidados esenciales y nutrición. Guía completa de la realeza felina.">    <title>Mundo Persa | La Elegancia y Encanto del Gato Persa</title>    <!-- Favicon -->    <link rel="icon" href="img/favicon.ico" type="image/x-icon">    <!-- Fuentes de Google Fonts -->    <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">    <!-- Estilos CSS -->    <link rel="stylesheet" href="css/style.css"></head><body>    <!-- Encabezado y Navegación -->    <header class="header">        <div class="container navbar">            <a href="#" class="logo">                <span>Mundo</span>Persa            </a>            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">                <span class="bar"></span>                <span class="bar"></span>                <span class="bar"></span>            </button>            <nav class="nav-menu" id="navMenu">                <ul>                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>                    <li><a href="#origen" class="nav-link">Origen</a></li>                    <li><a href="#caracteristicas" class="nav-link">Características</a></li>                    <li><a href="#personalidad" class="nav-link">Personalidad</a></li>                    <li><a href="#cuidados" class="nav-link">Cuidados</a></li>                    <li><a href="#galeria" class="nav-link">Galería</a></li>                </ul>            </nav>        </div>    </header>    <main>        <!-- Sección Hero / Inicio -->        <section id="inicio" class="hero">            <div class="hero-overlay"></div>            <div class="container hero-content">                <span class="badge">El Rey de los Felinos</span>                <h1>La aristocracia y dulzura del Gato Persa</h1>                <p>Explora la guía definitiva sobre una de las razas más majestuosas, cariñosas y reconocidas del mundo felino.</p>                <div class="hero-buttons">                    <a href="#caracteristicas" class="btn btn-primary">Conocer la Raza</a>                    <a href="#cuidados" class="btn btn-secondary">Guía de Cuidados</a>                </div>            </div>        </section>        <!-- Tarjetas de Métricas / Resumen Rápido -->        <section class="quick-stats">            <div class="container stats-grid">                <div class="stat-card">                    <span class="stat-number">12-17</span>                    <span class="stat-label">Años de Vida</span>                </div>                <div class="stat-card">                    <span class="stat-number">3.5 - 7</span>                    <span class="stat-label">Kg (Peso Promedio)</span>                </div>                <div class="stat-card">                    <span class="stat-number">Tranquilo</span>                    <span class="stat-label">Temperamento</span>                </div>                <div class="stat-card">                    <span class="stat-number">Largo</span>                    <span class="stat-label">Manto y Pelaje</span>                </div>            </div>        </section>        <!-- Historia y Origen -->        <section id="origen" class="section origen">            <div class="container grid-2">                <div class="section-image">                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" alt="Gato Persa histórico elegante" loading="lazy">                </div>                <div class="section-text">                    <span class="subheading">Historia Fascinante</span>                    <h2>Origen del Gato Persa</h2>                    <p>Los orígenes del gato Persa se remontan a la antigua Persia (actual Irán). En el siglo XVII, el explorador italiano Pietro Della Valle los introdujo en Europa, donde cautivaron a la aristocracia por su majestuoso pelaje espeso y silueta refinada.</p>                    <p>Con el paso del tiempo y la cría selectiva en el Reino Unido y Estados Unidos, la raza evolucionó hacia la fisonomía característica que conocemos hoy: cara ancha, cabeza redonda y hocico chato (braquicefálico).</p>                </div>            </div>        </section>        <!-- Rasgos y Características -->        <section id="caracteristicas" class="section caracteristicas bg-light">            <div class="container">                <div class="section-header center">                    <span class="subheading">Anatomía y Estilo</span>                    <h2>Características Físicas</h2>                    <p>Una morfología distintiva que lo convierte en un felino inconfundible.</p>                </div>                <div class="cards-grid">                    <article class="card">                        <div class="card-icon">👑</div>                        <h3>Cabeza y Rostro</h3>                        <p>Cabeza maciza y redonda, ojos grandes, expresivos y bien separados, con una nariz chata y marcada hendidura (stop).</p>                    </article>                    <article class="card">                        <div class="card-icon">✨</div>                        <h3>Pelaje Abundante</h3>                        <p>Manto largo, denso y sedoso, con una subcapa tupida que requiere dedicación y cuidado constante.</p>                    </article>                    <article class="card">                        <div class="card-icon">🐾</div>                        <h3>Cuerpo Cobby</h3>                        <p>Estructura corporal robusta, compacta, con patas cortas, musculosa y extremidades de osamenta fuerte.</p>                    </article>                </div>            </div>        </section>        <!-- Personalidad y Temperamento -->        <section id="personalidad" class="section personalidad">            <div class="container grid-2">                <div class="section-text">                    <span class="subheading">Carácter y Convivencia</span>                    <h2>Un Compañero Sereno y Afectuoso</h2>                    <p>El gato Persa es famoso por su temperamento apacible, paciente y pacífico. A diferencia de otras razas más activas, prefiere ambientes tranquilos y momentos de reposo al sol o cerca de su familia.</p>                    <ul class="check-list">                        <li><strong>Silencioso:</strong> Su maullido es suave, dulce y poco frecuente.</li>                        <li><strong>Sociable:</strong> Crea lazos muy estrechos con su núcleo familiar.</li>                        <li><strong>Hogareño:</strong> Ideal para vivir en pisos o apartamentos interiores.</li>                    </ul>                </div>                <div class="section-image">                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Gato Persa descansando plácidamente" loading="lazy">                </div>            </div>        </section>        <!-- Cuidados Esenciales -->        <section id="cuidados" class="section cuidados bg-light">            <div class="container">                <div class="section-header center">                    <span class="subheading">Salud y Bienestar</span>                    <h2>Cuidados Esenciales</h2>                    <p>Garantizar la calidad de vida de un Persa exige atención a su higiene y alimentación.</p>                </div>                <div class="cuidados-grid">                    <div class="cuida-box">                        <h3>1. Cepillado Diario</h3>                        <p>Su pelaje largo tiende a enredarse con facilidad. Un cepillado constante con peine de púas metálicas evita nudos y la acumulación de bolas de pelo en el estómago.</p>                    </div>                    <div class="cuida-box">                        <h3>2. Limpieza Ocular y Facial</h3>                        <p>Por su conformación facial (braquicefálica), sus conductos lagrimales suelen desbordar. Se recomienda limpiar sus ojos diariamente con gasas estériles y suero fisiológico.</p>                    </div>                    <div class="cuida-box">                        <h3>3. Alimentación Especial</h3>                        <p>Requiere croquetas adaptadas a la mandíbula braquicefálica y dietas ricas en ácidos grasos Omega-3 y Omega-6 para mantener su piel sana y pelo brillante.</p>                    </div>                    <div class="cuida-box">                        <h3>4. Entorno de Tranquilidad</h3>                        <p>Aprecian la rutina y la calma. Es importante brindarles rascadores horizontales/bajos, zonas cómodas para descansar y agua siempre fresca.</p>                    </div>                </div>            </div>        </section>        <!-- Galería de Fotos -->        <section id="galeria" class="section galeria">            <div class="container">                <div class="section-header center">                    <span class="subheading">Fotogenia Felina</span>                    <h2>Galería Muestra</h2>                    <p>Haz clic en las imágenes para ampliarlas y apreciar sus variantes de color.</p>                </div>                <div class="gallery-grid">                    <div class="gallery-item">                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=80" alt="Gato Persa Blanco" loading="lazy">                        <div class="gallery-caption">Persa Blanco Clásico</div>                    </div>                    <div class="gallery-item">                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=600&q=80" alt="Gato Persa Chinchilla" loading="lazy">                        <div class="gallery-caption">Persa Dorado / Atigrado</div>                    </div>                    <div class="gallery-item">                        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80" alt="Mirada Gato Persa" loading="lazy">                        <div class="gallery-caption">Mirada Expresiva</div>                    </div>                </div>            </div>        </section>    </main>    <!-- Modal para Galería -->    <div class="modal" id="imageModal" aria-hidden="true">        <span class="modal-close" id="modalClose">&times;</span>        <img class="modal-content" id="modalImg" alt="Imagen ampliada">        <div id="modalCaption" class="modal-caption"></div>    </div>    <!-- Pie de Página -->    <footer class="footer">        <div class="container footer-content">            <div class="footer-brand">                <h3>Mundo Persa</h3>                <p>El portal tributo dedicado a la belleza y cuidado del gato Persa.</p>            </div>            <div class="footer-links">                <h4>Navegación</h4>                <ul>                    <li><a href="#inicio">Inicio</a></li>                    <li><a href="#origen">Origen</a></li>                    <li><a href="#caracteristicas">Características</a></li>                    <li><a href="#cuidados">Cuidados</a></li>                </ul>            </div>        </div>        <div class="footer-bottom">            <div class="container">                <p>&copy; 2026 Mundo Persa. Creado con pasión por el bienestar felino.</p>            </div>        </div>    </footer>    <!-- Scripts JavaScript -->    <script src="js/main.js"></script></body></html>
